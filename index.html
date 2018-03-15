@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi-Player Rock Paper Scissors</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-billboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>ROCK PAPER SCISSORS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-content">
+        <!-- ROW 1 - For Player Name Input -->
+        <div class="row player-name">
+            <div class="col-md-12">
+                <h2 id="player-number"></h2>
+                <input name="player-name" type="text" value="What's Your Name?">
+                <button id="submit-name" class="btn btn-lg btn-submit">SUBMIT</button>
+            </div>
+        </div>
+
+        <!-- ROW 2 - For gameboard sections -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="player-display-1 player-display">
+                    <div id="player-name-1"></div>
+                    <div id="player-wins-1"></div>
+                    <div id="player-ties-1"></div>
+                    <div id="player-losses-1"></div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="center-board">
+                    <div class="win-display"></div>
+                    <div class="button-display">
+                        <img src="assets/images/rock.jpg" alt="Rock Icon" class="btn-icon">
+                        <img src="assets/images/paper.jpg" alt="Paper Icon" class="btn-icon">
+                        <img src="assets/images/scissors.jpg" alt="Scissors Icon" class="btn-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="player-display-2 player-display">
+                        <div id="player-name-2"></div>
+                        <div id="player-wins-2"></div>
+                        <div id="player-ties-2"></div>
+                        <div id="player-losses-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ROW 3 - For chat display -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="chat-display"></div>
+            </div>
+        </div>
+        <!-- ROW 3 - For chat input -->
+        <div class="row">
+            <div class="col-md-12">
+                <input class="chat-input" name="player-name" type="text" value="You're goin' down, pal!">
+                <button id="submit-name" class="btn btn-lg btn-submit">SMACK TALK</button>
+                <div class="text-center"><button class="btn btn-lg btn-danger">EXIT GAME</button></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+.jumbotron {
+    background: #fddc55; 
+    margin-bottom: 20px;
+}
+.jumbotron h1 {
+    font-weight: 700;
+    color: rgb(246, 246, 247);
+    font-size: 5em;
+}
+.btn-icon {
+    width: 100px;
+    transition: .5s ease-in-out;
+}
+.btn-icon:hover {
+    width: 110px;
+}
+.btn-icon:hover {
+    cursor: pointer;
+}
+.btn {
+    border-radius: 0;
+}
+.btn-submit {
+    margin-bottom: 11px;
+    background: #7ccfd9;
+    margin-left: 2%;
+    transition: .5s ease-in-out;
+}
+.btn-submit:hover {
+    background: #6fb5bd;
+}
+.btn-danger {
+    background: #f8b8ca;
+    border: none;
+    transition: .5s ease-in-out;
+}
+.btn-danger:hover {
+    background: #d8a5b3;
+}
+input {
+    width: 90%;
+    height: 46px;
+    font-size: 1.5em;
+    border: 1px solid #bce2e7;
+    padding-left: 5px;
+    color: dimgray;
+}
+.chat-input {
+    width: 87%;
+}
+.player-display {
+    border: 1px solid #bce2e7;
+    height: 250px;
+}
+.win-display {
+    border: 1px solid #bce2e7;
+    height: 115px; 
+}
+.center-board {
+    padding: 0 10px;
+}
+.button-display {
+    margin-top: 20px;
+}
+.chat-display {
+    background: #e8f8fa;
+    height: 250px;
+    margin-top: 40px;
+}
+.row {
+    margin-top: 10px;
+}
