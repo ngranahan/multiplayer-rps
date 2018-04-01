@@ -12,9 +12,11 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="game.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,8 +34,8 @@
         <div class="row player-name">
             <div class="col-md-12">
                 <h2 id="player-number"></h2>
-                <input name="player-name" type="text" value="What's Your Name?">
-                <button id="submit-name" class="btn btn-lg btn-submit">SUBMIT</button>
+                <input id="playerName" name="player-name" type="text" value="What's Your Name?">
+                <button id="addPlayer" class="btn btn-lg btn-submit">SUBMIT</button>
             </div>
         </div>
 
@@ -59,10 +61,10 @@
             </div>
             <div class="col-md-4">
                 <div class="player-display-2 player-display">
-                        <div id="player-name-2"></div>
-                        <div id="player-wins-2"></div>
-                        <div id="player-ties-2"></div>
-                        <div id="player-losses-2"></div>
+                    <div id="player-name-2"></div>
+                    <div id="player-wins-2"></div>
+                    <div id="player-ties-2"></div>
+                    <div id="player-losses-2"></div>
                 </div>
             </div>
         </div>
@@ -77,7 +79,9 @@
             <div class="col-md-12">
                 <input class="chat-input" name="player-name" type="text" value="You're goin' down, pal!">
                 <button id="submit-name" class="btn btn-lg btn-submit">SMACK TALK</button>
-                <div class="text-center"><button class="btn btn-lg btn-danger">EXIT GAME</button></div>
+                <div class="text-center">
+                    <button class="btn btn-lg btn-danger">EXIT GAME</button>
+                </div>
             </div>
         </div>
 
